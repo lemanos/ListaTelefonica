@@ -31,10 +31,9 @@ namespace ListaTelefonica.API
         public void ConfigureServices(IServiceCollection services)
         {
             var connectionString = Configuration.GetConnectionString("TesteConnection");
-            //services.AddDbContext<ListaTelefonicaDbContext>(options => options.UseSqlServer(connectionString));
+            services.AddDbContext<ListaTelefonicaDbContext>(options => options.UseSqlServer(connectionString));
 
-            services.AddDbContext<ListaTelefonicaDbContext>(options =>
-                       options.UseSqlServer(Configuration.GetValue<string>(connectionString)));
+         
 
             services.AddScoped<IContatoRepository, ContatoRepository>();
 
