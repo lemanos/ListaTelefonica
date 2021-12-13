@@ -1,0 +1,8 @@
+{
+  "nome": "testeErro",
+  "dataNascimento": "2010-02-22T21:05:18.050Z",
+  "isAtivo": true,
+  "sexo": "M",
+  "idade": 0,
+  "msgErro": "string"
+}
